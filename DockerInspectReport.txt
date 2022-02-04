@@ -1,0 +1,101 @@
+e4t4g@e4t4g:~/Desktop/OBS_GO/Observability_Go$ docker inspect b4fa11c4a689
+[
+    {
+        "Id": "sha256:b4fa11c4a68925e4d3f58c4002abb177869c0c6674c5a5c1c7dd9829c86a105f",
+        "RepoTags": [
+            "echobot:1.0.0"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:ba74bf9a8e162f8dbb73cda881b038f81b3f31213c72ca10f2e3dab711193e90",
+        "Comment": "",
+        "Created": "2022-02-04T12:36:01.549550673Z",
+        "Container": "5b8231252dc3a16530f23b0e767a3eebe691d7b674425f471792c355833d0b02",
+        "ContainerConfig": {
+            "Hostname": "5b8231252dc3",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOLANG_VERSION=1.17.6",
+                "GOPATH=/go"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/build/bin/api\"]"
+            ],
+            "Image": "sha256:ba74bf9a8e162f8dbb73cda881b038f81b3f31213c72ca10f2e3dab711193e90",
+            "Volumes": null,
+            "WorkingDir": "/go/src/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "DockerVersion": "20.10.7",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOLANG_VERSION=1.17.6",
+                "GOPATH=/go"
+            ],
+            "Cmd": [
+                "/build/bin/api"
+            ],
+            "Image": "sha256:ba74bf9a8e162f8dbb73cda881b038f81b3f31213c72ca10f2e3dab711193e90",
+            "Volumes": null,
+            "WorkingDir": "/go/src/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1035704139,
+        "VirtualSize": 1035704139,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/4512f8645317c3ba959e9d4162c7dfbcc17a474747a3ebdbfe97b8342a5f2b84/diff:/var/lib/docker/overlay2/f7bec6184241ba46f0cc23b6c53555eef420c23b98c1f0cb88e1e7655e407d28/diff:/var/lib/docker/overlay2/c568119648afb4e72800983895f24823b92c6eff8b9b6f2f5126bae11cc4beb6/diff:/var/lib/docker/overlay2/e14cb1bd036625295305294f8f93b00128b0b66695b061f108b8e9968df1ac14/diff:/var/lib/docker/overlay2/eaa966700660ccf37f9964b4f6e222d242104df8cfe2ec7075823d4af47ae5c3/diff:/var/lib/docker/overlay2/13047ba30953801ed941f6f378884e307b8d7c43aabc1407b5f2915b42a6e460/diff:/var/lib/docker/overlay2/f6dec77d6f3a2de464209449810fd2805f2a2ddc476896ea7330ac89c089ac35/diff:/var/lib/docker/overlay2/5545cf3ad1568c664e3dbb76a45fa487a057872269d78eda88d1ab99925c0463/diff:/var/lib/docker/overlay2/6fc1465b839cca47cd9e8aac6d7b84c16697bfca72f30644ec41b2eb46c1a864/diff:/var/lib/docker/overlay2/b240e3063f4db451e9395dd8c93c95f31d8eef20fa6399d8a91f5ae999e59f44/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b915cb3114522f33e382620a9f7b57b9e7a1847efdda7ab7cd8f40192707bd90/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b915cb3114522f33e382620a9f7b57b9e7a1847efdda7ab7cd8f40192707bd90/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b915cb3114522f33e382620a9f7b57b9e7a1847efdda7ab7cd8f40192707bd90/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:0b0f2f2f52795d31dd1107e7ac81adca6aa51769f6ec4e23f745e373ae588995",
+                "sha256:6398d5cccd2cc2c5989fc2021b9519eb5270bc8e09148b83818d0c1e10c69b98",
+                "sha256:bed676ceab7ad31ef6668df4b1d025e32744ca8ea6b7618d25cf318863f21fe8",
+                "sha256:613ab28cf833881e95b4ee02829114c33e9cd98ae2f10a8e46a48e6d88d410e2",
+                "sha256:7b5ae180667ab39600ab2561a3b675467dc62ba73c7d15b8c044ff68c11d338e",
+                "sha256:9e27e8abe53b678b8aed17be8aeab27691c575ecb6539f1fffa24efb1f8c1cb9",
+                "sha256:66f4f21514da910b9bf82d307ca8f32fa233126379ee636674024efe98085fbd",
+                "sha256:a58229d9ff87d93bbe412d1e514bce64c2f388beca5f2a6d6ae6d66849665781",
+                "sha256:df497510abcf2c4bdf55cb89047a59e82df6c36f9d2b1b8801a1629fbe68e53e",
+                "sha256:726ef2be6b5586513e57c50a906837b9b70f7e0b5e69a50316e4ccc2826db682",
+                "sha256:30c8b7bcc563db5d13292d305cf3eb831105675e72646b81cb8cc667a89dc6b2"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2022-02-04T15:36:24.085071275+03:00"
+        }
+    }
+]
