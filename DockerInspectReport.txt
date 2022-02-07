@@ -1,0 +1,112 @@
+e4t4g@e4t4g:~/Desktop/Backend_Go_1lvl/Backend_Go_1lvl$ docker images | grep 2e061b1304e9
+echobot                         1.0.3     2e061b1304e9   4 minutes ago    213MB
+
+
+[
+    {
+        "Id": "sha256:2e061b1304e90c7d09000cf8aed57cf3eb4fe0d6abc92df291d39dbeb5dcabb7",
+        "RepoTags": [
+            "echobot:1.0.3"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:bb64fcfcf0f6f9694e5cd3da933fa87429a312c73fe752170920eca8962d5afe",
+        "Comment": "",
+        "Created": "2022-02-07T08:53:32.544383486Z",
+        "Container": "8be5f26b03b0722168428ef2c19966428b6c073cccd82bd643e2b0f10b2aa174",
+        "ContainerConfig": {
+            "Hostname": "8be5f26b03b0",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/build/bin/api\"]"
+            ],
+            "Image": "sha256:bb64fcfcf0f6f9694e5cd3da933fa87429a312c73fe752170920eca8962d5afe",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "org.label-schema.build-date": "20201113",
+                "org.label-schema.license": "GPLv2",
+                "org.label-schema.name": "CentOS Base Image",
+                "org.label-schema.schema-version": "1.0",
+                "org.label-schema.vendor": "CentOS",
+                "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                "org.opencontainers.image.licenses": "GPL-2.0-only",
+                "org.opencontainers.image.title": "CentOS Base Image",
+                "org.opencontainers.image.vendor": "CentOS"
+            }
+        },
+        "DockerVersion": "20.10.7",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/build/bin/api"
+            ],
+            "Image": "sha256:bb64fcfcf0f6f9694e5cd3da933fa87429a312c73fe752170920eca8962d5afe",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "org.label-schema.build-date": "20201113",
+                "org.label-schema.license": "GPLv2",
+                "org.label-schema.name": "CentOS Base Image",
+                "org.label-schema.schema-version": "1.0",
+                "org.label-schema.vendor": "CentOS",
+                "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                "org.opencontainers.image.licenses": "GPL-2.0-only",
+                "org.opencontainers.image.title": "CentOS Base Image",
+                "org.opencontainers.image.vendor": "CentOS"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 212902067,
+        "VirtualSize": 212902067,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/00fbce6eb41a6da06310eed7bcca1f6c895bd5103c6bf4672248a74aad3e3888/diff:/var/lib/docker/overlay2/9678a93146ad4b7c37e3c7b782337c3978c7da7d916270e7ad1f917679efa15b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/db2c83e5858eb4ea4faa5a93f6f7d062d2108776bb85432b7d54b5c589c8bfac/merged",
+                "UpperDir": "/var/lib/docker/overlay2/db2c83e5858eb4ea4faa5a93f6f7d062d2108776bb85432b7d54b5c589c8bfac/diff",
+                "WorkDir": "/var/lib/docker/overlay2/db2c83e5858eb4ea4faa5a93f6f7d062d2108776bb85432b7d54b5c589c8bfac/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                "sha256:d89d6898feea96e8ba84c6f7c34486dbd26b53514a5957cb6976dc4696644dfb",
+                "sha256:e11635706f6e85a7db408ea42b8358f5ae89d3de617e8bbef54dc54a02139bf7"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2022-02-07T11:53:32.598113867+03:00"
+        }
+    }
+]
