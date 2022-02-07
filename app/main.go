@@ -26,7 +26,7 @@ type bot struct {
 func main() {
 	var configParse string
 
-	pflag.StringVar(&configParse, "config", "/config.yml", "config file path")
+	pflag.StringVar(&configParse, "config", "/go/src/config.yml", "config file path")
 
 	pflag.Parse()
 
