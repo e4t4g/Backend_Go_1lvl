@@ -20,11 +20,11 @@ func main() {
 		HostAddr:  "localhost:8001",
 	}
 
-	dirToServe := http.Dir(uploadHandler.UploadDir)
+	//dirToServe := http.Dir(uploadHandler.UploadDir)
 
 	fs := &http.Server{
 		Addr:         ":8001",
-		Handler:      http.FileServer(dirToServe),
+		Handler:      nil, //http.FileServer(dirToServe)
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}
@@ -37,7 +37,7 @@ func main() {
 		WriteTimeout: 10 * time.Second,
 	}
 
-	http.HandleFunc("/list", uploadHandler.uploadGetFiles)
+	http.HandleFunc("/list", uploadHandler.listGetFiles)
 
 	go func() {
 		log.Fatal(fs.ListenAndServe())
@@ -76,16 +76,30 @@ func (h *UploadHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func (h *UploadHandler) uploadGetFiles(w http.ResponseWriter, r *http.Request) {
+func (h *UploadHandler) listGetFiles(w http.ResponseWriter, r *http.Request) {
 	dirFiles, err := ioutil.ReadDir(h.UploadDir)
 	if err != nil {
 		log.Fatal(err)
 	}
-	for _, files := range dirFiles {
-		fmt.Fprintln(w,
-			files.Name(),
-			filepath.Ext(filepath.Ext(files.Name())),
-			files.Size())
-	}
-}
 
+	ext := r.FormValue("ext")
+
+	if len(ext) == 0 {
+		for _, files := range dirFiles {
+			fmt.Fprintln(w,
+				files.Name(),
+				filepath.Ext(filepath.Ext(files.Name())),
+				files.Size())
+		}
+	} else {
+		for _, files := range dirFiles {
+			if filepath.Ext(filepath.Ext(files.Name())) == ext {
+				fmt.Fprintln(w,
+					files.Name(),
+					filepath.Ext(filepath.Ext(files.Name())),
+					files.Size())
+			}
+		}
+	}
+
+}
